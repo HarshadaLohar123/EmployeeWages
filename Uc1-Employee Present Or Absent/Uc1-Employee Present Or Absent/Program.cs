@@ -11,6 +11,7 @@ namespace Uc1_Employee_Present_Or_Absent
             obj.Uc2_DailyWages();
             obj.Uc3_PartTime();
             obj.Uc4_SwitchCase();
+            obj.Uc5_WagesForAMonth();
         }
     }
 }

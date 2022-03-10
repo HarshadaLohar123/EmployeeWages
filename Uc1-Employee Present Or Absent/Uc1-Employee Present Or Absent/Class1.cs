@@ -18,7 +18,10 @@ namespace Uc1_Employee_Present_Or_Absent
         int totalWorkingDay = 20;
         int empHrs = 0;
         int empWage = 0;
-        
+        int totalEmpHr = 0;
+        int totalSalary = 0;
+
+
         public void Uc1Employee()
         {
             int empCheck = obj.Next(0, 2);
@@ -89,7 +92,31 @@ namespace Uc1_Employee_Present_Or_Absent
                 empWage = empHrs * Emp_Rate_Per_Hr;
                 Console.WriteLine("Employee one day salary is= " + empWage);
         }
+        public void Uc5_WagesForAMonth()
+        {
+            for (int day = 1; day <= totalWorkingDay; day++)
+            {
+                int randomCheck = obj.Next(0, 3);
+                switch (randomCheck)
+                {
+                    case 1:
+                        empHrs = 8;
+                        break;
+                    case 2:
+                        empHrs = 4;
+                        break;
+                    case 0:
+                        empHrs = 0;
+                        break;
+                }
+                empWage = empHrs * Emp_Rate_Per_Hr;
+                totalSalary = (totalSalary + empWage);
+            }
+            Console.WriteLine("Employee total salary for a month is= " + totalSalary);
+        }
+
+        }
     }
 
-    }
+    
 
