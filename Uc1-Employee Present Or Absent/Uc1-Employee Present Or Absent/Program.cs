@@ -8,11 +8,7 @@ namespace Uc1_Employee_Present_Or_Absent
         {
             Class1 obj = new Class1();
             obj.Uc1Employee();
-            obj.Uc2_DailyWages();
-            obj.Uc3_PartTime();
-            obj.Uc4_SwitchCase();
-            obj.Uc5_WagesForAMonth();
-            obj.Uc6_WagesOfTotalWorkingHours();
+            
         }
     }
 }
