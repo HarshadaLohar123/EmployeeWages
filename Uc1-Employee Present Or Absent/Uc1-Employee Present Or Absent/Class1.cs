@@ -67,7 +67,27 @@ namespace Uc1_Employee_Present_Or_Absent
             }
             empWage = empHrs * Emp_Rate_Per_Hr;
             Console.WriteLine("His Salary is= " + empWage);
-
+        }
+        public void Uc4_SwitchCase()
+        {
+            int randomCheck = obj.Next(0, 3);
+            switch (randomCheck)
+            {
+                case 1:
+                        empHrs = 8;
+                        Console.WriteLine("He is working full day");
+                        break;
+                case 2:
+                        empHrs = 4;
+                        Console.WriteLine("He is working Half day");
+                        break;
+                case 0:
+                        empHrs = 0;
+                        Console.WriteLine("He is absent");
+                        break;
+            }
+                empWage = empHrs * Emp_Rate_Per_Hr;
+                Console.WriteLine("Employee one day salary is= " + empWage);
         }
     }
 
