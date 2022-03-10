@@ -114,6 +114,38 @@ namespace Uc1_Employee_Present_Or_Absent
             }
             Console.WriteLine("Employee total salary for a month is= " + totalSalary);
         }
+        public void Uc6_WagesOfTotalWorkingHours()
+        {
+            while (totalEmpHr < maxRateInMonth && totalWorkingDay < numOfWorkingDays)
+            {
+                totalWorkingDay++;
+                int randomCheck = obj.Next(0, 3);
+                switch (randomCheck)
+                {
+                    case 1:
+                        {
+                            empHrs = 8;
+                            break;
+                        }
+                    case 2:
+                        {
+                            empHrs = 4;
+                            break;
+                        }
+                    case 0:
+                        {
+                            empHrs = 0;
+                            break;
+                        }
+
+                }
+                totalEmpHr = (totalEmpHr + empHrs);
+            }
+            int totaSalary = (totalEmpHr * Emp_Rate_Per_Hr);
+            Console.WriteLine("Employee total salary is= " + totaSalary);
+            Console.WriteLine("Employee total Hours Worked= " + totalEmpHr);
+            Console.WriteLine("Employee total working Days is= " + totalWorkingDay);
+        }
 
         }
     }
