@@ -8,6 +8,7 @@ namespace Uc1_Employee_Present_Or_Absent
         {
             Class1 obj = new Class1();
             obj.Uc1Employee();
+            obj.Uc2_DailyWages();
         }
     }
 }
